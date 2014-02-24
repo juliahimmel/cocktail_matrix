@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Crimson Text', 'Georgia', serif;
   color: black;
   background-color: none;
 }
@@ -10,8 +10,8 @@ a {
 }
 
 h1 {
-  font-size: 1.750em;
-  letter-spacing: -1.5px;
+  font-size: 2.5em;
+  
 }
 
 h2 {
@@ -19,43 +19,24 @@ h2 {
   color: black;
 }
 
-.btn {
-  color: #FAF3BC;
-  background: #4FB69F url('img/texture.png') no-repeat right top;
-  padding: 15px 30px;
-  margin: 40px 0px;
-  border-radius: 25px;
-  text-transform: uppercase;
-}
-
-.btn:hover {
-  background-color: #4CC4A7;
-}
-
-ul.nav {
-  margin: 120px 0 0 0;
-  list-style: none;
-  float: right;
-}
-
-ul.nav li {
-  float: left;
-  margin-right: 40px;
-}
-
-ul.nav li a {
-  color: #FAF3BC;
-}
-
 #intro {
-  margin: 50px 0 75px 0;
+  margin: 50px 0px 75px 50px;
+  line-height: 3.5em;
 }
 
-#recipe {
+#old_fashioned_recipe {
   margin: 0 0 20px 0;
 }
 
+#recipe_title {
+  
+}
 
+.ingredients {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: italic;
+}
 
 
 .top_rule {
@@ -65,9 +46,13 @@ ul.nav li a {
 
 }
 
+#name {
+  color: red;
+}
 
-
-
+.cocktail_pic {
+  margin-left: 40px;
+}
 
 
 
