@@ -1,7 +1,7 @@
 body {
   font-family: 'Nunito', sans-serif;
-  color: #FAF3BC;
-  background: #420600 url('img/bg-texture.jpg') repeat;
+  color: black;
+  background-color: none;
 }
 
 a {
@@ -51,7 +51,7 @@ ul.nav li a {
   margin: 50px 0 75px 0;
 }
 
-#new-cupcakes img {
+#recipe {
   border: 8px solid #FAF3BC;
   margin: 0 0 20px 0;
 }
