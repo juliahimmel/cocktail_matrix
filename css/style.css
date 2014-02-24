@@ -16,7 +16,7 @@ h1 {
 
 h2 {
   font-size: 1.500em;
-  color: #B4C34F;
+  color: black;
 }
 
 .btn {
@@ -52,21 +52,18 @@ ul.nav li a {
 }
 
 #recipe {
-  border: 8px solid #FAF3BC;
   margin: 0 0 20px 0;
 }
 
-#featured-cupcake img {
-  border: 8px solid #FAF3BC;
-}
 
-#copyright {
-  border-top: 8px solid #2A0400;
+
+
+.top_rule {
+  border-top: 1px solid black;
   padding: 10px 0px;
   margin: 15px 0px;
-  text-align: center;
-}
 
+}
 
 
 
