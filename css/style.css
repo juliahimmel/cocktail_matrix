@@ -5,7 +5,10 @@ body {
   font-variant-numeric: oldstyle-nums;
 }
 
-a {}
+a {
+  color: #FF3300;
+  text-decoration: none;
+}
 
 h1 {
   font-size: 2.5em;  
