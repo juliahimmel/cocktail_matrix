@@ -20,40 +20,52 @@ h2 {
 }
 
 #intro {
-  margin: 50px 0px 75px 50px;
+  margin: 18px 0px 0px 50px;
   line-height: 3.5em;
 }
 
 #old_fashioned_recipe {
-  margin: 0 0 20px 0;
+  margin: 70px 0 20px 80px;
 }
 
-#recipe_title {
-  
+.recipe_title {
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1.5em;
 }
 
 .ingredients {
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-weight: 400;
   font-style: italic;
+  text-align: center;
+
 }
 
 
 .top_rule {
-  border-top: 1px solid black;
-  padding: 10px 0px;
-  margin: 15px 0px;
-
+  border-top: 1.5px dotted black;
+  padding: 2px 0px;
+  margin: 0px 50px;
 }
 
 #name {
-  color: red;
+  color: #FF3300;
 }
 
 .cocktail_pic {
-  margin-left: 40px;
+  margin: 25px 0 0 80px;
 }
 
+.body_of_recipe {
+  font-size: 1.2em;
+  font-weight: 400;
+
+}
 
 
 
