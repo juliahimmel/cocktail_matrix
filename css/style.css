@@ -31,11 +31,11 @@ h2 {
 .recipe_title {
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1.5px;
-  font-size: 1em;
+  font-size: 1.3em;
   text-transform: uppercase;
   text-align: center;
   border-bottom: 1px dotted black;
-  padding-bottom: 1.5em;
+  padding-bottom: 0.4em;
 }
 
 .ingredients {
@@ -43,7 +43,7 @@ h2 {
   font-weight: 400;
   font-style: italic;
   text-align: center;
-
+  padding-top: 0.2em;
 }
 
 
