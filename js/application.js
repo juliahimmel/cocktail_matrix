@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
   $(".box").mouseover( function (){
-    $(this).siblings().addClass("fade").css( 'background-color: blue' )
+    $(this).siblings().addClass("fade")
   }).mouseout( function() {
     $(".box").removeClass("fade");
   })
 
-
+  
 
 
 
