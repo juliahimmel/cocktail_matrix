@@ -18,7 +18,7 @@ body {
   line-height: 1.2em;
   font-family: 'Crimson Text', 'Georgia', serif;
   color: #000;
-  text-indent: -0.4em;
+  text-indent: -0.3em;
   font-weight:400;
 }
 
@@ -28,6 +28,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.13em;
   margin-bottom: 28px;
+  text-align: right;
 }
 
 .matrix {
@@ -81,4 +82,79 @@ img {
 
 .outer {
   border-right: none;
+}
+
+
+/*RECIPE*/
+
+.hidden {
+  display: none;
+}
+
+.column {
+  margin: 0 20px 10px 0;
+  float: left;
+  display: block;
+}
+
+.recipe {
+  width: 100%;
+  height: 100%;
+  padding: 0 20%;
+  position: absolute;
+  opacity: 0.97;
+  background-color: #fff;
+  right: -10%;
+}
+
+.ex {
+  position: absolute;
+  right: 12%;  
+}
+
+
+.cocktail_pic {
+  display: inline-block;
+  width: 55%;
+}
+
+.full_recipe {
+  display: inline-block;
+  width: 25%;
+}
+
+.recipe_title {
+  font-family: 'Oswald', Impact, Charcoal, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px dotted black;
+  padding-bottom: 0.4em;
+}
+
+.ingredients {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  padding-top: 0.2em;
+}
+
+.cocktail_pic {
+  /*margin: 25px 0 0 80px;*/
+}
+
+.body_of_recipe {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.number {
+  font-family: 'Georgia', 'Crimson Text', serif; 
+  font-size: 0.8em;
+}
+
+.list_of_ingredients {
+  list-style: none;
 }
