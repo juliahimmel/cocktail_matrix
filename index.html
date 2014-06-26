@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="cocktailGrid">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Julia Himmel wants you to have a drink</title>
@@ -7,16 +7,16 @@
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/application.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
 </head>
-<body>
+<body ng-controller="GridController">
 <div class="container">
 
   <div class="recipe hidden">
     <img alt="x" src="img/x.png" class="ex">
     <div class="cocktail_pic column">
-      <img src="img/Old Fashioned.jpg" alt="Old Fashioned Cocktail">
+      <img src="img/Old_Fashioned_web.jpg" alt="Old Fashioned Cocktail">
     </div>
     <div class="full_recipe column">
         <h2 class="recipe_title">The Old-Fashioned</h2>
@@ -45,7 +45,7 @@
 
     <div class="box changer">
       <img src="img/Tom_Collins_thumb.jpg">
-      <p class="title">Tom Collins<p>
+      <p class="title">{{ GridController.cocktails[0].name }}<p>
     </div>
 
     <div class="box changer">

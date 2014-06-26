@@ -1,19 +1,38 @@
-$(document).ready(function () {
+(function () {
+  var app = angular.module('cocktailGrid', []);
 
-  $(".box").mouseover( function (){
-    $(this).siblings().addClass("fade")
-  }).mouseout( function() {
-    $(".box").removeClass("fade");
+
+  app.controller('GridController', function (){
+    this.cocktails = cocktails;
   });
 
-  $(".box").on("click", function (){
-  	var recipe = $(this).parent().siblings(".recipe");
-  	recipe.removeClass("hidden");
-  	$(recipe.children(".ex")).on( "click", function (){
-  		recipe.addClass("hidden");
-  	});
+  var cocktails = [
+    { name: 'Tom Collins',
+    img: 'img/Tom_Collins_thumb.jpg' },
+    { name: 'Sloe Gin Fizz',
+    img: 'img/Sloe_Gin_Fizz_thumb.jpg'
+    }
+  ];
 
-  });
+})();
+
+
+// $(document).ready(function () {
+
+//   $(".box").mouseover( function (){
+//     $(this).siblings().addClass("fade")
+//   }).mouseout( function() {
+//     $(".box").removeClass("fade");
+//   });
+
+//   $(".box").on("click", function (){
+//   	var recipe = $(this).parent().siblings(".recipe");
+//   	recipe.removeClass("hidden");
+//   	$(recipe.children(".ex")).on( "click", function (){
+//   		recipe.addClass("hidden");
+//   	});
+
+//   });
 
   
 
@@ -21,5 +40,5 @@ $(document).ready(function () {
 
 
 
-}); ///close doc ready
+// }); ///close doc ready
 
