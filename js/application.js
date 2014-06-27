@@ -1,9 +1,10 @@
-(function () {
+(function() {
   var app = angular.module('cocktailGrid', []);
 
 
-  app.controller('GridController', function (){
-    this.cocktails = cocktails;
+  app.controller('GridController', function(){
+    this.hello = "Hello";
+    this.items = cocktails;
   });
 
   var cocktails = [
@@ -15,30 +16,4 @@
   ];
 
 })();
-
-
-// $(document).ready(function () {
-
-//   $(".box").mouseover( function (){
-//     $(this).siblings().addClass("fade")
-//   }).mouseout( function() {
-//     $(".box").removeClass("fade");
-//   });
-
-//   $(".box").on("click", function (){
-//   	var recipe = $(this).parent().siblings(".recipe");
-//   	recipe.removeClass("hidden");
-//   	$(recipe.children(".ex")).on( "click", function (){
-//   		recipe.addClass("hidden");
-//   	});
-
-//   });
-
-  
-
-
-
-
-
-// }); ///close doc ready
 
