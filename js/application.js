@@ -16,7 +16,37 @@
     img: 'img/Tom_Collins_thumb.jpg' },
     { name: 'Sloe Gin Fizz',
     img: 'img/Sloe_Gin_Fizz_thumb.jpg'
-    }
+    },
+    { name: 'Sidecar',
+    img: 'img/Sidecar_thumb.jpg'
+    },
+    { name: 'Sazerac',
+    img: 'img/Sazerac_thumb.jpg'
+    },
+    { name: 'Old Fashioned',
+    img: 'img/Old_Fashioned_thumb.jpg'
+    },
+    { name: 'Negroni',
+    img: 'img/Negroni_thumb.jpg'
+    },
+    { name: 'Mojito',
+    img: 'img/Mojito_thumb.jpg'
+    },
+    { name: 'Mint Julep',
+    img: 'img/Mint_Julep_thumb.jpg'
+    },
+    { name: 'Martini',
+    img: 'img/Martini_thumb.jpg'
+    },
+    { name: 'Manhattan',
+    img: 'img/Manhattan_thumb.jpg'
+    },
+    { name: 'Jack Rose',
+    img: 'img/Jack_Rose_thumb.jpg'
+    },
+    { name: 'Daiquiri',
+    img: 'img/Daiquiri_thumb.jpg'
+    },
   ];
 
 })();

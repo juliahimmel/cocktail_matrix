@@ -43,12 +43,12 @@
 
   <div class="matrix">
 
-    <div class="box changer">
-      <img src="img/Tom_Collins_thumb.jpg">
-      <p class="title">{{ items[0].name }}<p>
+    <div class="box changer" ng-repeat="item in items">
+      <img src="{{ item.img }}">
+      <p class="title">{{ item.name }}<p>
     </div>
 
-    <div class="box changer">
+<!--     <div class="box changer">
       <img src="img/Sloe_Gin_Fizz_thumb.jpg">
       <p class="title">Sloe Gin Fizz<p>
     </div>
@@ -105,7 +105,7 @@
     <div class="box outer changer">
       <img src="img/Daiquiri_thumb.jpg">
       <p class="title">Daiquiri<p>
-    </div>
+    </div> -->
 
 
   </div>
