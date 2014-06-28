@@ -38,10 +38,14 @@ body {
   -webkit-transition: opacity 0.2s;*/
 }
 
-.fade {
+.matrix:hover > .fade {
   opacity:0.3;
 /*  transition: opacity 0.2s ease;
   -webkit-transition: opacity 0.2s ease;*/
+}
+
+.matrix:hover > .fade:hover {
+  opacity:1.0;
 }
 
 .changer {
