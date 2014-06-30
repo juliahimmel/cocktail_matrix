@@ -11,6 +11,17 @@
    $scope.items = cocktails;        
   });
 
+  app.filter('range', function(){
+    return function(array, lowerBound, upperBound){
+        var filtered=[];
+        for(var i=0;i<array.length;i++){
+                if(i>=lowerBound && i<=upperBound)
+                    filtered.push(array[i]);
+        }
+        return filtered;
+    } 
+});
+
   var cocktails = [
     { name: 'Tom Collins',
     img: 'img/Tom_Collins_thumb.jpg' },

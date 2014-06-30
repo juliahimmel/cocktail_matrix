@@ -43,80 +43,28 @@
 
   <div class="matrix">
 
-    <div class="box changer fade" ng-repeat="item in items">
+    <div class="box changer fade" ng-repeat="item in items | range:0:3">
       <img src="{{ item.img }}">
       <p class="title">{{ item.name }}<p>
     </div>
 
-<!--     <div class="box changer">
-      <img src="img/Sloe_Gin_Fizz_thumb.jpg">
-      <p class="title">Sloe Gin Fizz<p>
-    </div>
+    <div class="rule"></div>
 
-    <div class="box changer">
-      <img src="img/Sidecar_thumb.jpg">
-      <p class="title">Sidecar<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Sazerac_thumb.jpg">
-      <p class="title">Sazerac<p>
+    <div class="box changer fade" ng-repeat="item in items | range:4:7">
+      <img src="{{ item.img }}">
+      <p class="title">{{ item.name }}<p>
     </div>
 
     <div class="rule"></div>
 
-    <div class="box changer">
-      <img src="img/Old_Fashioned_thumb.jpg">
-      <p class="title">Old Fashioned<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Negroni_thumb.jpg">
-      <p class="title">Negroni<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Mojito_thumb.jpg">
-      <p class="title">Mojito<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Mint_Julep_thumb.jpg">
-      <p class="title">Mint Julep<p>
+    <div class="box changer fade" ng-repeat="item in items | range:8:11">
+      <img src="{{ item.img }}">
+      <p class="title">{{ item.name }}<p>
     </div>
 
     <div class="rule"></div>
-
-    <div class="box changer">
-      <img src="img/Martini_thumb.jpg">
-      <p class="title">Martini<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Manhattan_thumb.jpg">
-      <p class="title">Manhattan<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Jack_Rose_thumb.jpg">
-      <p class="title">Jack Rose<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Daiquiri_thumb.jpg">
-      <p class="title">Daiquiri<p>
-    </div> -->
-
 
   </div>
-
-
-
-
-
-
-
-
 
 </div>
 </body>
