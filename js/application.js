@@ -8,7 +8,7 @@
   // });
 
   app.controller("GridController", function($scope){
-   $scope.items = cocktails;        
+   $scope.items = cocktails;       
   });
 
   app.filter('range', function(){
@@ -20,43 +20,55 @@
         }
         return filtered;
     } 
-});
+  });
 
   var cocktails = [
     { name: 'Tom Collins',
-    img: 'img/Tom_Collins_thumb.jpg' },
+    img: 'img/Tom_Collins_thumb.jpg',
+    liquor: 'gin' },
     { name: 'Sloe Gin Fizz',
-    img: 'img/Sloe_Gin_Fizz_thumb.jpg'
+    img: 'img/Sloe_Gin_Fizz_thumb.jpg',
+    liquor: 'gin'
     },
     { name: 'Sidecar',
-    img: 'img/Sidecar_thumb.jpg'
+    img: 'img/Sidecar_thumb.jpg',
+    liquor: 'brandy'
     },
     { name: 'Sazerac',
-    img: 'img/Sazerac_thumb.jpg'
+    img: 'img/Sazerac_thumb.jpg',
+    liquor: 'whisky'
     },
     { name: 'Old Fashioned',
-    img: 'img/Old_Fashioned_thumb.jpg'
+    img: 'img/Old_Fashioned_thumb.jpg',
+    liquor: 'whisky'
     },
     { name: 'Negroni',
-    img: 'img/Negroni_thumb.jpg'
+    img: 'img/Negroni_thumb.jpg',
+    liquor: 'gin'
     },
     { name: 'Mojito',
-    img: 'img/Mojito_thumb.jpg'
+    img: 'img/Mojito_thumb.jpg',
+    liquor: 'rum'
     },
     { name: 'Mint Julep',
-    img: 'img/Mint_Julep_thumb.jpg'
+    img: 'img/Mint_Julep_thumb.jpg',
+    liquor: 'whisky'
     },
     { name: 'Martini',
-    img: 'img/Martini_thumb.jpg'
+    img: 'img/Martini_thumb.jpg',
+    liquor: 'gin'
     },
     { name: 'Manhattan',
-    img: 'img/Manhattan_thumb.jpg'
+    img: 'img/Manhattan_thumb.jpg',
+    liquor: 'whisky'
     },
     { name: 'Jack Rose',
-    img: 'img/Jack_Rose_thumb.jpg'
+    img: 'img/Jack_Rose_thumb.jpg',
+    liquor: 'brandy'
     },
     { name: 'Daiquiri',
-    img: 'img/Daiquiri_thumb.jpg'
+    img: 'img/Daiquiri_thumb.jpg',
+    liquor: 'rum'
     },
   ];
 

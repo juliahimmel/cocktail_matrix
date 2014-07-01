@@ -43,26 +43,44 @@
 
   <div class="matrix">
 
-    <div class="box changer fade" ng-repeat="item in items | range:0:3">
-      <img src="{{ item.img }}">
-      <p class="title">{{ item.name }}<p>
+    <div class="nav ginchooser">
+      <p>gin</p>
+    </div>
+
+    <div class="nav whiskychooser">
+      <p>whisky</p>
+    </div>
+
+    <div class="nav rumchooser">
+      <p>rum</p>
+    </div>
+
+    <div class="nav brandychooser">
+      <p>brandy</p>
     </div>
 
     <div class="rule"></div>
 
-    <div class="box changer fade" ng-repeat="item in items | range:4:7">
+    <div class="box changer fade {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}">
       <img src="{{ item.img }}">
       <p class="title">{{ item.name }}<p>
     </div>
 
-    <div class="rule"></div>
+    <div class="rule fade"></div>
 
-    <div class="box changer fade" ng-repeat="item in items | range:8:11">
+    <div class="box changer fade {{item.liquor}}" ng-repeat="item in items | range:4:7" ng-class="{'outer': $last}">
       <img src="{{ item.img }}">
       <p class="title">{{ item.name }}<p>
     </div>
 
-    <div class="rule"></div>
+    <div class="rule fade"></div>
+
+    <div class="box changer fade {{item.liquor}}" ng-repeat="item in items | range:8:11" ng-class="{'outer': $last}">
+      <img src="{{ item.img }}">
+      <p class="title">{{ item.name }}<p>
+    </div>
+
+    <div class="rule fade"></div>
 
   </div>
 

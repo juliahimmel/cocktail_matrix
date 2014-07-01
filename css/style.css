@@ -33,18 +33,29 @@ body {
 
 .matrix {
   margin-top: 24px;
-
-/*  transition: opacity 0.2s;
-  -webkit-transition: opacity 0.2s;*/
 }
 
 .matrix:hover > .fade {
   opacity:0.3;
-/*  transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;*/
 }
 
 .matrix:hover > .fade:hover {
+  opacity:1.0;
+}
+
+.ginchooser:hover ~ .gin {
+  opacity:1.0;
+}
+
+.whiskychooser:hover ~ .whisky {
+  opacity:1.0;
+}
+
+.rumchooser:hover ~ .rum {
+  opacity:1.0;
+}
+
+.brandychooser:hover ~ .brandy {
   opacity:1.0;
 }
 
@@ -76,9 +87,25 @@ img {
   padding-top: 16px;
 }
 
+.nav,
 .box {
   display: inline-block;
   width: 21%;
+}
+
+.nav {
+  padding: 0 16px;
+}
+
+.nav p {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', 'Kockout', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.box {
   border-right: 1px solid #95a5a6;
   padding: 16px;
   margin: 20px 0 10px 0;
