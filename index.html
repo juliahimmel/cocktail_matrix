@@ -43,19 +43,19 @@
 
   <div class="matrix">
 
-    <div class="nav ginchooser">
+    <div class="nav ginchooser" ng-click="clickHere()" ng-class="{ 'ginselect': active == true }" >
       <p>gin</p>
     </div>
 
-    <div class="nav whiskychooser">
+    <div class="nav whiskychooser" ng-click="clickHere()" ng-class="{ 'whiskyselect': active == true }">
       <p>whisky</p>
     </div>
 
-    <div class="nav rumchooser">
+    <div class="nav rumchooser" ng-click="clickHere()" ng-class="{ 'rumselect': active == true }">
       <p>rum</p>
     </div>
 
-    <div class="nav brandychooser">
+    <div class="nav brandychooser" ng-click="clickHere()" ng-class="{ 'brandyselect': active == true }">
       <p>brandy</p>
     </div>
 

@@ -8,7 +8,17 @@
   // });
 
   app.controller("GridController", function($scope){
-   $scope.items = cocktails;       
+   $scope.items = cocktails;
+   $scope.active = false;
+   $scope.clickHere = function() {
+      if ($scope.active == false) {
+        $scope.active = true;
+      } else {
+        $scope.active = false;
+      };
+      
+   };
+
   });
 
   app.filter('range', function(){
