@@ -23,12 +23,12 @@
       };
     };
     $scope.recipeShow = function(item) {
-      // alert(item.instructions);
       $scope.recipe = true;
       $scope.name = item.name;
       $scope.ingredients = item.ingredients;
       $scope.instructions = item.instructions;
-      $scope.img = item.img   
+      $scope.img = item.img;
+      console.log($scope.img);   
     };
 
   });
