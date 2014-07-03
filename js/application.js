@@ -10,14 +10,17 @@
   app.controller("GridController", function($scope){
    $scope.items = cocktails;
    $scope.active = false;
+   $scope.recipe = false;
    $scope.clickHere = function() {
       if ($scope.active == false) {
         $scope.active = true;
       } else {
         $scope.active = false;
       };
-      
-   };
+    };
+    $scope.recipeShow = function(item) {
+      alert(item.instructions);    
+    };
 
   });
 
@@ -34,18 +37,21 @@
 
   var cocktails = [
     { name: 'Tom Collins',
-    img: 'img/Tom_Collins_thumb.jpg',
-    liquor: 'gin' },
+    img: ['img/Tom_Collins_thumb.jpg', 'img/Tom_Collins_web.jpg'],
+    liquor: 'gin',
+    ingredients: ['2 ounces London dry gin', '1 teaspoon fine sugar', '&frac12; ounce lemon juice', 'club soda'],
+    instructions: 'Fill a Collins glass with ice  &frac34 of the way. Pour in the gin, sugar, and lemon juice. Top with club soda and stir. Garnish with a lemon twist.' 
+     },
     { name: 'Sloe Gin Fizz',
-    img: 'img/Sloe_Gin_Fizz_thumb.jpg',
+    img: ['img/Sloe_Gin_Fizz_thumb.jpg'],
     liquor: 'gin'
     },
     { name: 'Sidecar',
-    img: 'img/Sidecar_thumb.jpg',
+    img: ['img/Sidecar_thumb.jpg'],
     liquor: 'brandy'
     },
     { name: 'Sazerac',
-    img: 'img/Sazerac_thumb.jpg',
+    img: ['img/Sazerac_thumb.jpg'],
     liquor: 'whisky'
     },
     { name: 'Old Fashioned',

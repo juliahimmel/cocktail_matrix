@@ -13,13 +13,13 @@
 <body ng-controller="GridController">
 <div class="container">
 
-  <div class="recipe hidden">
+  <div class="recipe" ng-show="recipe == true">
     <img alt="x" src="img/x.png" class="ex">
-    <div class="cocktail_pic column">
+<!--     <div class="cocktail_pic column">
       <img src="img/Old_Fashioned_web.jpg" alt="Old Fashioned Cocktail">
-    </div>
+    </div> -->
     <div class="full_recipe column">
-        <h2 class="recipe_title">The Old-Fashioned</h2>
+        <h2 class="recipe_title">{{ item.name }}</h2>
         <p class="ingredients">Ingredients</p>
         <div class="body_of_recipe">
           <ul class="list_of_ingredients">
@@ -61,8 +61,8 @@
 
     <div class="rule"></div>
 
-    <div class="box changer fade {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}">
-      <img src="{{ item.img }}">
+    <div class="box changer fade {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
+      <img ng-src="{{item.img[0]}}">
       <p class="title">{{ item.name }}<p>
     </div>
 
