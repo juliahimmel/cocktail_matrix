@@ -11,6 +11,10 @@
    $scope.items = cocktails;
    $scope.active = false;
    $scope.recipe = false;
+   $scope.name = "";
+   $scope.ingredients = [];
+   $scope.instructions = "";
+   $scope.img = [];
    $scope.clickHere = function() {
       if ($scope.active == false) {
         $scope.active = true;
@@ -19,7 +23,12 @@
       };
     };
     $scope.recipeShow = function(item) {
-      alert(item.instructions);    
+      // alert(item.instructions);
+      $scope.recipe = true;
+      $scope.name = item.name;
+      $scope.ingredients = item.ingredients;
+      $scope.instructions = item.instructions;
+      $scope.img = item.img   
     };
 
   });
