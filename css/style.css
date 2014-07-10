@@ -123,17 +123,17 @@ img {
 
 .title {
   text-align: center;
-  padding-top: 16px;
+  /*padding-top: 16px;*/
 }
 
 .nav,
 .box {
   display: inline-block;
-  width: 21%;
+  width: 23%;
 }
 
 .nav {
-  padding: 0 16px;
+  /*position: fixed;*/
 }
 
 .nav p {
@@ -146,8 +146,8 @@ img {
 
 .box {
   border-right: 1px solid #95a5a6;
-  padding: 16px;
-  margin: 20px 0 10px 0;
+  /*padding: 16px;*/
+  margin: 10px 0;
 }
 
 .outer {
