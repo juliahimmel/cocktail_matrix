@@ -15,13 +15,7 @@
    $scope.ingredients = [];
    $scope.instructions = "";
    $scope.img = [];
-   $scope.clickHere = function() {
-      if ($scope.active == false) {
-        $scope.active = true;
-      } else {
-        $scope.active = false;
-      };
-    };
+
     $scope.recipeShow = function(item) {
       $scope.recipe = true;
       $scope.name = item.name;
