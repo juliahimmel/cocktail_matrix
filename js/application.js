@@ -40,47 +40,47 @@
     instructions: 'Fill a Collins glass with ice  &frac34 of the way. Pour in the gin, sugar, and lemon juice. Top with club soda and stir. Garnish with a lemon twist.' 
      },
     { name: 'Sloe Gin Fizz',
-    img: ['img/Sloe_Gin_Fizz_thumb.jpg'],
+    img: ['img/Sloe_Gin_Fizz_thumb.jpg', 'img/Sloe_Gin_Fizz_web.jpg'],
     liquor: 'gin'
     },
     { name: 'Sidecar',
-    img: ['img/Sidecar_thumb.jpg'],
+    img: ['img/Sidecar_thumb.jpg', 'img/Sidecar_web.jpg'],
     liquor: 'brandy'
     },
     { name: 'Sazerac',
-    img: ['img/Sazerac_thumb.jpg'],
+    img: ['img/Sazerac_thumb.jpg', 'img/Sazerac_web.jpg'],
     liquor: 'whisky'
     },
     { name: 'Old Fashioned',
-    img: 'img/Old_Fashioned_thumb.jpg',
+    img: ['img/Old_Fashioned_thumb.jpg', 'img/Old_Fashioned_web.jpg'],
     liquor: 'whisky'
     },
     { name: 'Negroni',
-    img: 'img/Negroni_thumb.jpg',
+    img: ['img/Negroni_thumb.jpg', 'img/Negroni_web.jpg'],
     liquor: 'gin'
     },
     { name: 'Mojito',
-    img: 'img/Mojito_thumb.jpg',
+    img: ['img/Mojito_thumb.jpg', 'img/Mojito_web.jpg'],
     liquor: 'rum'
     },
     { name: 'Mint Julep',
-    img: 'img/Mint_Julep_thumb.jpg',
+    img: ['img/Mint_Julep_thumb.jpg', 'img/Mint_Julep_web.jpg'],
     liquor: 'whisky'
     },
     { name: 'Martini',
-    img: 'img/Martini_thumb.jpg',
+    img: ['img/Martini_thumb.jpg', 'img/Martini_web.jpg'],
     liquor: 'gin'
     },
     { name: 'Manhattan',
-    img: 'img/Manhattan_thumb.jpg',
+    img: ['img/Manhattan_thumb.jpg', 'img/Manhattan_web.jpg'],
     liquor: 'whisky'
     },
     { name: 'Jack Rose',
-    img: 'img/Jack_Rose_thumb.jpg',
+    img: ['img/Jack_Rose_thumb.jpg', 'img/Jack_Rose_web.jpg'],
     liquor: 'brandy'
     },
     { name: 'Daiquiri',
-    img: 'img/Daiquiri_thumb.jpg',
+    img: ['img/Daiquiri_thumb.jpg', 'img/Daiquiri_web.jpg'],
     liquor: 'rum'
     },
   ];

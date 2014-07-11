@@ -7,7 +7,7 @@ body {
     font-family: 'Crimson Text', 'Georgia', serif;
 }
 
-.quote {
+/*.quote {
   border-bottom: 6px solid #000;
   padding-bottom: 6px;
 }
@@ -29,7 +29,7 @@ body {
   letter-spacing: 0.13em;
   margin-bottom: 28px;
   text-align: right;
-}
+}*/
 
 .matrix {
   margin-top: 24px;
@@ -48,19 +48,19 @@ body {
 /*fade on liquor hover effect*/
 
 .ginchooser:hover ~ .gin {
-  opacity:1.0;
+  opacity:1.0 !important;
 }
 
 .whiskychooser:hover ~ .whisky {
-  opacity:1.0;
+  opacity:1.0 !important;
 }
 
 .rumchooser:hover ~ .rum {
-  opacity:1.0;
+  opacity:1.0 !important;
 }
 
 .brandychooser:hover ~ .brandy {
-  opacity:1.0;
+  opacity:1.0 !important;
 }
 
 .changer {
@@ -88,7 +88,11 @@ img {
 
 .title {
   text-align: center;
-  /*padding-top: 16px;*/
+  margin-top: 4%;
+}
+
+.top {
+  margin-top: 1%;
 }
 
 .nav,
@@ -97,16 +101,20 @@ img {
   width: 23%;
 }
 
-.nav {
-  /*position: fixed;*/
-}
-
 .nav p {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Oswald', 'Kockout', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  position: fixed;
+  width: 23%;
+  top: 0;
+  border-bottom: 2px solid #000;
+  padding: 1em 0 1em 0;
+  background-color: #fff;
+  -webkit-margin-before: 0;
+  opacity: 1.0 !important;
 }
 
 .box {
