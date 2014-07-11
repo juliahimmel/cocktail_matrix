@@ -45,41 +45,6 @@ body {
   opacity:1.0;
 }
 
-/*fade on liquor click effect*/
-
-.ginselect ~ .fade {
-  opacity:0.3;
-}
-
-.ginselect ~ .gin {
-  opacity:1.0 !important;
-}
-
-.whiskyselect ~ .fade {
-  opacity:0.3;
-}
-
-.whiskyselect ~ .whisky {
-  opacity:1.0 !important;
-}
-
-.rumselect ~ .fade {
-  opacity:0.3;
-}
-
-.rumselect ~ .rum {
-  opacity:1.0 !important;
-}
-
-.brandyselect ~ .fade {
-  opacity:0.3;
-}
-
-.brandyselect ~ .brandy {
-  opacity:1.0 !important;
-}
-
-
 /*fade on liquor hover effect*/
 
 .ginchooser:hover ~ .gin {

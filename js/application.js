@@ -1,12 +1,6 @@
 (function() {
   var app = angular.module('cocktailGrid', []);
 
-
-  // app.controller('GridController', function(){
-  //   this.hello = "Hello";
-  //   this.items = cocktails;
-  // });
-
   app.controller("GridController", function($scope){
    $scope.items = cocktails;
    $scope.active = false;
