@@ -37,30 +37,46 @@ body {
 
 /*whole grid matrix fade effect*/
 
-.matrix:hover > .fade {
+/*.matrix:hover > .fade {
   opacity:0.3;
 }
 
 .matrix:hover > .fade:hover {
   opacity:1.0;
-}
+}*/
 
 /*fade on liquor hover effect*/
 
+.ginchooser:hover ~ .fade {
+  opacity:0.3;
+}
+
 .ginchooser:hover ~ .gin {
-  opacity:1.0 !important;
+  opacity:1.0;
+}
+
+.whiskychooser:hover ~ .fade {
+  opacity:0.3;
 }
 
 .whiskychooser:hover ~ .whisky {
-  opacity:1.0 !important;
+  opacity:1.0;
+}
+
+.rumchooser:hover ~ .fade {
+  opacity:0.3;
 }
 
 .rumchooser:hover ~ .rum {
-  opacity:1.0 !important;
+  opacity:1.0;
+}
+
+.brandychooser:hover ~ .fade {
+  opacity:0.3;
 }
 
 .brandychooser:hover ~ .brandy {
-  opacity:1.0 !important;
+  opacity:1.0;
 }
 
 .changer {
@@ -114,6 +130,10 @@ img {
   padding: 1em 0 1em 0;
   background-color: #fff;
   -webkit-margin-before: 0;
+  opacity: 1.0 !important;
+}
+
+.nav {
   opacity: 1.0 !important;
 }
 
