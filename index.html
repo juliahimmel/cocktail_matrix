@@ -54,9 +54,6 @@
       <h3>choose your poison</h3>
     </div> -->
 
-
-    <div class="top"></div>
-
     <div class="box changer {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
       <img ng-src="{{item.img[0]}}">
       <p class="title">{{ item.name }}<p>
