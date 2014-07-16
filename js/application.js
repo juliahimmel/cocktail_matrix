@@ -10,6 +10,19 @@
    $scope.instructions = "";
    $scope.img = [];
 
+   $scope.gridFade = function(spirit) {
+    $("div.matrix").children().addClass("fade");
+    $("div.matrix").find("div." + spirit).addClass("unfade");
+   };
+
+   $scope.unfade = function() {
+    $("div.matrix").children().removeClass("fade");
+    $("div.matrix").children().removeClass("unfade");
+
+   };
+
+
+
     $scope.recipeShow = function(item) {
       $scope.recipe = true;
       $scope.name = item.name;
