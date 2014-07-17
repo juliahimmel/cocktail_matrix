@@ -1,13 +1,17 @@
 (function() {
   var app = angular.module('cocktailGrid', []);
 
-  app.controller("GridController", function($scope){
+  app.controller("GridController", function($scope, $sce){
     $scope.items = cocktails;
     $scope.recipe = false;
     $scope.name = "";
     $scope.ingredients = [];
     $scope.instructions = "";
     $scope.img = [];
+
+    $scope.TrustHtmlSnippet = function(snippet) {
+      return $sce.trustAsHtml(snippet);
+    };
 
     $scope.gridFade = function(spirit) {
       $("div.matrix").children().addClass("fade");
