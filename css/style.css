@@ -85,6 +85,7 @@ img {
   padding: 1em 0 1em 0;
   background-color: #fff;
   -webkit-margin-before: 0;
+  z-index: 1;
 }
 
 .box {
