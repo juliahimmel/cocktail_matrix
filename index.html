@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="cocktailGrid">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Julia Himmel wants you to have a drink</title>
@@ -7,116 +7,74 @@
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700italic,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/application.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
 </head>
-<body>
+<body ng-controller="GridController">
 <div class="container">
 
-  <div class="recipe hidden">
-    <img alt="x" src="img/x.png" class="ex">
+  <div class="recipe" ng-show="recipe == true">
+    <img alt="x" src="img/x.png" class="ex" ng-click="recipe = false">
     <div class="cocktail_pic column">
-      <img src="img/Old Fashioned.jpg" alt="Old Fashioned Cocktail">
+      <img ng-src="{{img[1]}}" alt="Cocktail full-size">
     </div>
     <div class="full_recipe column">
-        <h2 class="recipe_title">The Old-Fashioned</h2>
+        <h2 class="recipe_title">{{ name }}</h2>
         <p class="ingredients">Ingredients</p>
         <div class="body_of_recipe">
           <ul class="list_of_ingredients">
-            <li>&middot;  <span class="number">1</span> sugar cube</li>
-            <li>&middot;  <span class="number">3</span> dashes Angostura bitters</li>
-            <li>&middot;  <span class="number">2</span> ounces rye whisky</li>
-            <li>&middot;  club soda</li>
+            <li ng-repeat="ingredient in ingredients" ng-bind-html="TrustHtmlSnippet(ingredient)">{{ingredient}}</li>
           </ul>
-          <p id="instructions" >Place the sugar cube in an Old-Fashioned glass. Add bitters and a little club soda. Muddle. Add one large ice cube, followed by the rye.</p>
+          <p id="instructions" ng-bind-html="TrustHtmlSnippet(instructions)">{{instructions}}</p>
         </div>
     </div>
   </div>
 
-  <div class="quote">
-    <h3 class="quote_body">&ldquo;After much pondering I think I understand a basic reason why a glass of something reviving is so welcome in the early evening. Partly, of course, it&rsquo;s just that, to revive, to relax; but it&rsquo;s also a convenient way of becoming a different person from your daytime self, less methodical, less calculating&#8212;however you put it, somebody different, and the prospect of that has helped to make the day tolerable.&rdquo;</h3>
-    <h2 class="author">&#8212;Kingsley Amis</h2>
-  </div>
+    <div class="heading" ng-hide="recipe == true">
+      <h3>choose your poison</h3>
+      <p>Hover over a spirit to see what you can make with it. Click on a cocktail to view the recipe.</p>
+    </div>
 
-  <div class="rule"></div>
+    <div class="nav" ng-hide="recipe == true" ng-mouseenter="gridFade('gin')" ng-mouseleave="unfade()">
+      <p>gin</p>
+    </div>
 
+    <div class="nav" ng-hide="recipe == true" ng-mouseenter="gridFade('whisky')" ng-mouseleave="unfade()">
+      <p>whisky</p>
+    </div>
+
+    <div class="nav" ng-hide="recipe == true" ng-mouseenter="gridFade('rum')" ng-mouseleave="unfade()">
+      <p>rum</p>
+    </div>
+
+    <div class="nav" ng-hide="recipe == true" ng-mouseenter="gridFade('brandy')" ng-mouseleave="unfade()">
+      <p>brandy</p>
+    </div>
 
   <div class="matrix">
 
-    <div class="box changer">
-      <img src="img/Tom Collins.jpg">
-      <p class="title">Tom Collins<p>
-    </div>
 
-    <div class="box changer">
-      <img src="img/Sloe Gin Fizz.jpg">
-      <p class="title">Sloe Gin Fizz<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Sidecar.jpg">
-      <p class="title">Sidecar<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Sazerac.jpg">
-      <p class="title">Sazerac<p>
+    <div class="box changer {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
+      <img ng-src="{{item.img[0]}}">
+      <p class="title">{{ item.name }}<p>
     </div>
 
     <div class="rule"></div>
 
-    <div class="box changer">
-      <img src="img/Old Fashioned.jpg">
-      <p class="title">Old Fashioned<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Negroni.jpg">
-      <p class="title">Negroni<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Mojito.jpg">
-      <p class="title">Mojito<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Mint Julep.jpg">
-      <p class="title">Mint Julep<p>
+    <div class="box changer {{item.liquor}}" ng-repeat="item in items | range:4:7" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
+      <img ng-src="{{item.img[0]}}">
+      <p class="title">{{ item.name }}<p>
     </div>
 
     <div class="rule"></div>
 
-    <div class="box changer">
-      <img src="img/Martini.jpg">
-      <p class="title">Martini<p>
+    <div class="box changer {{item.liquor}}" ng-repeat="item in items | range:8:11" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
+      <img ng-src="{{item.img[0]}}">
+      <p class="title">{{ item.name }}<p>
     </div>
-
-    <div class="box changer">
-      <img src="img/Manhattan.jpg">
-      <p class="title">Manhattan<p>
-    </div>
-
-    <div class="box changer">
-      <img src="img/Jack Rose.jpg">
-      <p class="title">Jack Rose<p>
-    </div>
-
-    <div class="box outer changer">
-      <img src="img/Daiquiri.jpg">
-      <p class="title">Daiquiri<p>
-    </div>
-
 
   </div>
-
-
-
-
-
-
-
-
 
 </div>
 </body>

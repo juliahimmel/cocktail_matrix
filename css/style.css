@@ -7,41 +7,18 @@ body {
     font-family: 'Crimson Text', 'Georgia', serif;
 }
 
-.quote {
-  border-bottom: 6px solid #000;
-  padding-bottom: 6px;
-}
-
-.quote_body {
-
-  font-size: 1.8em;
-  line-height: 1.2em;
-  font-family: 'Crimson Text', 'Georgia', serif;
-  color: #000;
-  text-indent: -0.3em;
-  font-weight:400;
-}
-
-.author {
-  font-size:1.25em;
-  font-weight:600;
-  text-transform: uppercase;
-  letter-spacing: 0.13em;
-  margin-bottom: 28px;
-  text-align: right;
-}
-
 .matrix {
-  margin-top: 24px;
-
-/*  transition: opacity 0.2s;
-  -webkit-transition: opacity 0.2s;*/
+  margin-top: 22.6%;
 }
+
+/*fade on liquor hover effect*/
 
 .fade {
   opacity:0.3;
-/*  transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;*/
+}
+
+.unfade {
+  opacity:1.0 !important;
 }
 
 .changer {
@@ -69,15 +46,69 @@ img {
 
 .title {
   text-align: center;
-  padding-top: 16px;
+  margin-top: 4%;
+}
+
+.top {
+  margin-top: 1%;
+}
+
+
+
+.nav,
+.box {
+  display: inline-block;
+  width: 24.5%;
+}
+
+.nav p {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', Impact, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: fixed;
+  width: 20.2%;
+  top: 24%;
+  border-bottom: 2px solid #000;
+  padding: 1em 0 1em 0;
+  background-color: #fff;
+  -webkit-margin-before: 0;
+  z-index: 1;
+}
+
+.heading {
+  width: 80%;
+  clear: both;
+  background-color: #fff;
+  position: fixed;
+  padding: 1% 0 0.1% 0;
+  top: 0%;
+  z-index: 1;
+  border-bottom: 2px solid #000;
+}
+
+.heading h3 {
+  font-size: 2.65em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  font-weight: 400;
+}
+
+.heading p {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+  margin-bottom: 2.2em;
 }
 
 .box {
-  display: inline-block;
-  width: 21%;
   border-right: 1px solid #95a5a6;
-  padding: 16px;
-  margin: 20px 0 10px 0;
+  margin: 10px 0;
 }
 
 .outer {
@@ -100,22 +131,23 @@ img {
 .recipe {
   width: 100%;
   height: 100%;
-  padding: 0 20%;
+  padding: 0.8% 20% 30% 20%;
   position: absolute;
-  opacity: 0.97;
   background-color: #fff;
   right: -10%;
+  top:3%;
 }
 
 .ex {
   position: absolute;
-  right: 12%;  
+  right: 10.2%;  
 }
 
 
 .cocktail_pic {
   display: inline-block;
-  width: 55%;
+  width: 49%;
+  margin-left: 12%;
 }
 
 .full_recipe {
@@ -124,7 +156,7 @@ img {
 }
 
 .recipe_title {
-  font-family: 'Oswald', Impact, Charcoal, sans-serif;
+  font-family: 'Oswald', Impact, sans-serif;
   letter-spacing: 1.5px;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -141,8 +173,9 @@ img {
   padding-top: 0.2em;
 }
 
-.cocktail_pic {
-  /*margin: 25px 0 0 80px;*/
+.number {
+  font-family: 'Georgia', 'Crimson Text', serif; 
+  font-size: 0.8em;
 }
 
 .body_of_recipe {
