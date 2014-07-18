@@ -71,7 +71,7 @@
     ingredients: ['&middot;  <span class="number">1</span> sugar cube', '&middot;  <span class="number">2 &frac12;</span> ounces rye whisky', '&middot;  <span class="number">2</span> dashes Peychaud’s bitters', '&middot;  <span class="number">1</span> dash Angostura bitters', '&middot;  absinthe'],
     instructions: 'Muddle the sugar cube with a little water in a glass. Add the bitters and some ice, then the rye. Coat the inside of a second Old-Fashioned glass with absinthe, pouring off the excess. Strain the drink into the glass and top with a lemon twist.'
     },
-    { name: 'Old Fashioned',
+    { name: 'Old-Fashioned',
     img: ['img/Old_Fashioned_thumb.jpg', 'img/Old_Fashioned_web.jpg'],
     liquor: 'whisky',
     ingredients: ['&middot;  <span class="number">1</span> sugar cube', '&middot;  <span class="number">3</span> dashes Angostura bitters', '&middot;  <span class="number">2</span> ounces rye whisky', '&middot;  club soda'],
