@@ -154,6 +154,10 @@ img {
   padding-top: 0.2em;
 }
 
+.number {
+  font-family: 'Georgia', 'Crimson Text', serif; 
+  font-size: 0.8em;
+}
 
 .body_of_recipe {
   font-size: 1.2em;
