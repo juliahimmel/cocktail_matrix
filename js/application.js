@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('cocktailGrid', []);
 
-  app.controller("GridController", function($scope, $sce){
+  app.controller("GridController", function($scope, $sce, $window){
     $scope.items = cocktails;
     $scope.recipe = false;
     $scope.name = "";
@@ -30,6 +30,7 @@
       $scope.ingredients = item.ingredients;
       $scope.instructions = item.instructions;
       $scope.img = item.img;
+      $window.scrollTo(0,0);
     };
 
   });
