@@ -31,6 +31,10 @@
     </div>
   </div>
 
+    <div class="heading" ng-hide="recipe == true">
+      <h3>choose your poison</h3>
+      <p>Hover over a spirit to see what you can make with it. Click on a cocktail to view the recipe.</p>
+    </div>
 
     <div class="nav" ng-hide="recipe == true" ng-mouseenter="gridFade('gin')" ng-mouseleave="unfade()">
       <p>gin</p>
@@ -50,9 +54,6 @@
 
   <div class="matrix">
 
-<!--     <div class="heading">
-      <h3>choose your poison</h3>
-    </div> -->
 
     <div class="box changer {{item.liquor}}" ng-repeat="item in items | range:0:3" ng-class="{'outer': $last}" ng-click="recipeShow(item)">
       <img ng-src="{{item.img[0]}}">

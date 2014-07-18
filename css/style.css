@@ -8,7 +8,7 @@ body {
 }
 
 .matrix {
-  margin-top: 34px;
+  margin-top: 22.6%;
 }
 
 /*fade on liquor hover effect*/
@@ -53,17 +53,6 @@ img {
   margin-top: 1%;
 }
 
-/*.heading {
-  position: fixed;
-  top: 0;
-  width: 80%;
-  clear: both;
-}*/
-
-/*.heading h3 {
-  text-transform: uppercase;
-  text-align: center;
-}*/
 
 
 .nav,
@@ -79,13 +68,42 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   position: fixed;
-  width: 20%;
-  top: 0;
+  width: 20.2%;
+  top: 24%;
   border-bottom: 2px solid #000;
   padding: 1em 0 1em 0;
   background-color: #fff;
   -webkit-margin-before: 0;
   z-index: 1;
+}
+
+.heading {
+  width: 80%;
+  clear: both;
+  background-color: #fff;
+  position: fixed;
+  padding: 1% 0 0.1% 0;
+  top: 0%;
+  z-index: 1;
+  border-bottom: 2px solid #000;
+}
+
+.heading h3 {
+  font-size: 2.65em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.07em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  font-weight: 400;
+}
+
+.heading p {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+  margin-bottom: 2.2em;
 }
 
 .box {
@@ -117,6 +135,7 @@ img {
   position: absolute;
   background-color: #fff;
   right: -10%;
+  top:3%;
 }
 
 .ex {
