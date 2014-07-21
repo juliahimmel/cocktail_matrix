@@ -78,6 +78,10 @@ img {
   z-index: 1;
 }
 
+.nav p:hover {
+  opacity: 0.75;
+}
+
 .heading {
   width: 80%;
   clear: both;
@@ -86,7 +90,6 @@ img {
   padding: 1% 0 0.1% 0;
   top: 0%;
   z-index: 1;
-  /*border-bottom: 2px solid #000;*/
 }
 
 .heading h3 {
