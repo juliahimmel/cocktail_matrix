@@ -159,6 +159,10 @@ img {
   right: 10.2%;  
 }
 
+.ex:hover {
+  opacity: 0.6;
+}
+
 
 .cocktail_pic {
   display: inline-block;
