@@ -8,7 +8,7 @@ body {
 }
 
 .matrix {
-  margin-top: 210px;
+  margin-top: 188px;
 }
 
 /*fade on liquor hover effect*/
@@ -69,7 +69,7 @@ img {
   letter-spacing: 1px;
   position: fixed;
   width: 20.2%;
-  top: 176px;
+  top: 150px;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
   padding: 1em 0 1em 0;
@@ -77,6 +77,7 @@ img {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   z-index: 1;
+  margin:0;
 }
 
 .nav p:hover {
@@ -101,7 +102,14 @@ img {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   font-weight: 400;
-  margin:0;
+  margin: 0 0 -1em 0;
+  padding:0;
+}
+
+@-moz-document url-prefix() {
+    .heading h3 {
+        margin-bottom: -1.5em;
+    }
 }
 
 .heading p {
@@ -109,8 +117,9 @@ img {
   font-style: italic;
   font-weight: 400;
   font-size: 1.4em;
-  margin-bottom: 2.4em;
-  margin-top: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 50px 0 60px 0;
 }
 
 .box {
