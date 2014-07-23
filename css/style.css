@@ -69,12 +69,13 @@ img {
   letter-spacing: 1px;
   position: fixed;
   width: 20.2%;
-  top: 23%;
+  top: 176px;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
   padding: 1em 0 1em 0;
   background-color: #fff;
   -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
   z-index: 1;
 }
 
@@ -87,8 +88,8 @@ img {
   clear: both;
   background-color: #fff;
   position: fixed;
-  padding: 1% 0 0.1% 0;
-  top: 0%;
+  padding-top: 18px;
+  top: 0;
   z-index: 1;
 }
 
@@ -100,6 +101,7 @@ img {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   font-weight: 400;
+  margin:0;
 }
 
 .heading p {
@@ -107,7 +109,8 @@ img {
   font-style: italic;
   font-weight: 400;
   font-size: 1.4em;
-  margin-bottom: 2.2em;
+  margin-bottom: 2.4em;
+  margin-top: 0;
 }
 
 .box {
